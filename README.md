@@ -1,4 +1,4 @@
-# glowing-guacamol
+# glowing-guacamole
 
 
 [ ] Create a multi-page website in JavaScript with a relevant UI/UX design using React (UI library) and advanced styling techniques.
