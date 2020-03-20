@@ -13,7 +13,7 @@ class App extends React.Component {
 
   render() {
   return (
-    <div className="App">
+    <div className="App"></div>
         <Router>
         <NavBar></NavBar>
           <Route exact path="/" component={TopicsContainer} />
