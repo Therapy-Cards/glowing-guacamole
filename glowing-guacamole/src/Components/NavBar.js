@@ -1,12 +1,12 @@
 import React from "react";
 import {Link} from 'react-router-dom'
-
+import herbal from '../herbal.png'
 
 const Navbar = (props) => {
     return(
-        <div>
+        <div className='Nav'>
             <nav>
-                <img src="../herbal.png" alt="logo" />
+                <img src={herbal} alt="logo" />
                 <Link to='/'>Home</Link>
                 <Link to='/About'>About</Link>
                 <Link to='/LoginForm'>Login</Link>

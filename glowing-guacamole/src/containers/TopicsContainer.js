@@ -12,20 +12,18 @@ class TopicsContainer extends React.Component {
     }
 
     render(){
-        console.log(this)
-
+        // console.log(this)
         return (
             <div className="App">
                 <br></br>
                 <Button variant="contained" color="primary" >SELECT A TOPIC!</Button>
                 <br></br>
                 <br></br>
-                {/* <Topics topics={this.props.topics} /> */}
+                <Topics topics={this.props.topics} />
                 <br></br>
             </div>
         )
     }
-
 }
 
 const mapStateToProps = state => {
