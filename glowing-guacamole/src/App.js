@@ -1,8 +1,13 @@
-import React, { useState } from "react";
-import Answers from "./Components/AnswersInput";
-import Thoughts from "./Components/Thoughts";
-import herbal from "./herbal.png";
-import "./App.css";
+import React from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import './App.css';
+import TopicsContainer from './containers/TopicsContainer';
+import ResponsesContainer from './containers/ResponsesContainer';
+import QuestionAndResponse from './containers/QuestionAndResponse';
+import AboutContainer from './containers/AboutContainer';
+import AllResponsesContainer from './containers/AllResponsesContainer';
+import NavBar from './components/NavBar'
+
 
 class App extends React.Component {
 
