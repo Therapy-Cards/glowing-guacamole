@@ -15,7 +15,8 @@ class App extends React.Component {
           <Route exact path="/topics" component={TopicsContainer} />
           <Route exact path="/about" component={AboutContainer} />
           <Route path={`/topics/:topicId/responses`} component={ResponsesContainer}/>
-          <Route path={`/topics/:topicId/responses/new`} component={Container}/>
+          <Route path={`/responses`} component={AllResponsesContainer}/>
+          <Route path={`/topics/:topicId/`} component={QuestionAndResponse}/>
         </Router>
     </div>
   )
