@@ -8,21 +8,24 @@ import'../App.css'
 class TopicsContainer extends React.Component {
     
     componentDidMount(){
-        this.props.fetchCategories()
+        this.props.fetchTopics()
     }
 
     render(){
+        console.log(this)
+
         return (
             <div className="App">
                 <br></br>
                 <Button variant="contained" color="primary" >SELECT A TOPIC!</Button>
                 <br></br>
                 <br></br>
-                <Topics topics={this.props.topics} />
+                {/* <Topics topics={this.props.topics} /> */}
                 <br></br>
             </div>
         )
     }
+
 }
 
 const mapStateToProps = state => {
@@ -30,5 +33,7 @@ const mapStateToProps = state => {
         topics: state.topics
     }
 }
+
+
 
 export default connect(mapStateToProps, {fetchTopics})(TopicsContainer)

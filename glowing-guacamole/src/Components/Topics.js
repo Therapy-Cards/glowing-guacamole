@@ -1,15 +1,15 @@
 import React from 'react'
-import Category from './Category'
+import Topic from './Topic'
 
-class Categories extends React.Component{
+const Topics = (props) => {
+    const topics = props.topics.map(topic => <Topic key={topic.id} topic={topic} />)
 
-    render(){
         return(
             <div className="card-container">
                 {topics}
              </div>
         )
-    }
+
 }
 
-export default Categories
+export default Topics

@@ -4,21 +4,25 @@ import './App.css';
 import TopicsContainer from './containers/TopicsContainer';
 import ResponsesContainer from './containers/ResponsesContainer';
 import QuestionAndResponse from './containers/QuestionAndResponse';
-import AboutContainer from './containers/AboutContainer';
 import AllResponsesContainer from './containers/AllResponsesContainer';
 import NavBar from './components/NavBar'
+import LoginForm from './components/LoginForm'
+import SignUpForm from './components/SignUpForm'
+import About from './components/About'
 
 
 class App extends React.Component {
 
   render() {
   return (
-    <div className="App"></div>
+    <div className="App">
         <Router>
-        <NavBar></NavBar>
+          <Route exact path="/navbar" component={NavBar} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/login" component={LoginForm} />
+          <Route exact path="/signup" component={SignUpForm} />
           <Route exact path="/" component={TopicsContainer} />
           <Route exact path="/topics" component={TopicsContainer} />
-          <Route exact path="/about" component={AboutContainer} />
           <Route path={`/topics/:topicId/responses`} component={ResponsesContainer}/>
           <Route path={`/responses`} component={AllResponsesContainer}/>
           <Route path={`/topics/:topicId/`} component={QuestionAndResponse}/>

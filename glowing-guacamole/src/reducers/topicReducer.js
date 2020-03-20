@@ -20,8 +20,6 @@ export default function categoryReducer(state = {categories: []}, action) {
                     return topic}
             })
             return {...state, topics: topicsTwo}
-            default:
-                return state
 
         case 'UPDATE_RESPONSE':
             let topicsThree = state.topics.map(topic => {
