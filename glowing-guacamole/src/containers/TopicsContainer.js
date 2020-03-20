@@ -12,7 +12,7 @@ class TopicsContainer extends React.Component {
     }
 
     render(){
-        // console.log(this)
+        console.log(this)
         return (
             <div className="App">
                 <br></br>
