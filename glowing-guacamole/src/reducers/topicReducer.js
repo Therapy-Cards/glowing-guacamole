@@ -1,5 +1,6 @@
 export default function categoryReducer(state = {categories: []}, action) {
     switch (action.type) {
+        
         case 'FETCH_TOPICS':
             return {topics: action.payload} 
 
