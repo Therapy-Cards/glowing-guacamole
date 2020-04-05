@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '@material-ui/core/Button'
 
 class QuestionCard extends React.Component {
+    
     constructor() {
         super()
         this.state = {
